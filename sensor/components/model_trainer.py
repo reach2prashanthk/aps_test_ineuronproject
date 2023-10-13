@@ -84,6 +84,8 @@ class ModelTrainer:
             f1_train_score=f1_train_score, f1_test_score=f1_test_score)
             logging.info(f"Model trainer artifact: {model_trainer_artifact}")
             return model_trainer_artifact
+        
+        
         except Exception as e:
             raise SensorException(e, sys)
 

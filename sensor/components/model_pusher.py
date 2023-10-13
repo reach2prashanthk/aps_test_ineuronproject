@@ -1,15 +1,18 @@
+from sensor.entity.artifact_entity import ModelPusherArtifact, ModelTrainerArtifact
 from sensor.predictor import ModelResolver
 from sensor.entity.config_entity import ModelPusherConfig
 from sensor.exception import SensorException
 import os,sys
 from sensor.utils import load_object,save_object
 from sensor.logger import logging
-from sensor.entity.artifact_entity import DataTransformationArtifact,ModelTrainerArtifact,ModelPusherArtifact
+from sensor.entity.artifact_entity import DataTransformationArtifact
+
 class ModelPusher:
 
     def __init__(self,model_pusher_config:ModelPusherConfig,
     data_transformation_artifact:DataTransformationArtifact,
     model_trainer_artifact:ModelTrainerArtifact):
+        
         try:
             logging.info(f"{'>>'*20} Data Transformation {'<<'*20}")
             self.model_pusher_config=model_pusher_config
