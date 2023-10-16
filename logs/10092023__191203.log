@@ -1,5 +1,0 @@
-[ 2023-10-09 19:12:12,835 ] 14 root - INFO - Creating model resolver object
-[ 2023-10-09 19:12:12,835 ] 16 root - INFO - Reading file :C:\Users\prash\Downloads\aps-fault-detection-main (2)\aps-fault-detection-main-original\aps_failure_training_set1.csv
-[ 2023-10-09 19:12:13,504 ] 21 root - INFO - Loading transformer to transform dataset
-[ 2023-10-09 19:12:13,955 ] 27 root - INFO - Loading model to make prediction
-[ 2023-10-09 19:12:14,039 ] 31 root - INFO - Target encoder to convert predicted column into categorical
